@@ -1,13 +1,191 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+     <div class="box1"><a href="#">
+<img src="fliplogo.jpg" alt="Logo">
+    </a></div>
+<div class="box2">
+<nav class="nav"><a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact us</a>
+</nav></div>
+    </div>
+</header>
 
-2. Inside the header keep the brand name to the left and all the navigation to the right.
+<main>
+    <article>
+<div class="container2">
+  <img  class="item1" src="wall3.jpg" alt="error" >
+  <div class="container3">
+<h2> WEB DEVOLOPMENT</h2>
+<p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam dolorum incidunt autem dicta provident hic pariatur debitis nesciunt error architecto cumque, ipsa cupiditate at placeat recusandae earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam dolorum incidunt autem dicta provident hic pariatur debitis nesciunt error architecto cumque, ipsa cupiditate at placeat recusandae earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam dolorum incidunt autem dicta provident hic pariatur debitis nesciunt error architecto cumque, ipsa cupiditate at placeat recusandae earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam dolorum incidunt autem dicta provident hic pariatur debitis nesciunt error architecto cumque, ipsa cupiditate at placeat recusandae earum.</p>
+  </div>
+</div>
+    </article>
 
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
 
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+<section> 
+   <div class="container4">
+<img class="col1" src="wall1.jpg" alt="img">
+<img class="col2" src="wall2.jpg" alt="img">
+<img class="col3" src="wall3.jpg" alt="img"></div>
+</section>
+<section> 
 
-6. After the gallery section footer will come.
+    <div class="container4">
+ <img class="col1" src="wall1.jpg" alt="img">
+ <img class="col2" src="wall2.jpg" alt="img">
+ <img class="col3" src="wall3.jpg" alt="img"></div>
+ </section>
 
-7. Use flexbox properties and values to create columns.
- -->
+<footer>
+    <a class="a" href="#">Facebook</a>
+    <a class="a" href="#">Instagram</a>
+</footer>
+
+
+
+
+</main>
+</body>
+</html>
+
+
+style.css
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+/*flex*/
+header{ background-color: rgb(10, 10, 128);
+	padding: 10px 0;
+}
+.container {display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{width: 60px;
+	height: 60px;
+}
+nav, a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	margin-right: 10px;
+}
+.box2{ height: 30px;
+}
+
+.container2{margin-top: 30px;
+	width: 100%;
+	display: flex;
+	
+	justify-content: space-evenly;
+}
+.item1{width: 200px;
+	height:200px;
+}
+.container3{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+h2{font-size: 30px;
+	margin-bottom: 20px;
+
+}
+.container4{display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+
+
+.col1{ margin-top: 60px;
+width: 200px;
+height: 200px;
+}
+.col2{margin-top: 60px;
+	width: 200px;
+	height: 200px;
+}
+.col3{margin-top: 60px;
+	width: 200px;
+	height: 200px;
+}
+
+footer{padding: 40px 0 ;
+	margin-top: 10px;
+background-color: rgb(10, 10, 128);
+text-align: center;
+}
+.a{ margin-left: 20px;
+
+}
+	border-spacing: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
