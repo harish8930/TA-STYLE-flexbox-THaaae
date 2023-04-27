@@ -1,8 +1,160 @@
-<!-- 
-- Create a gallery using flexbox according to the layout shown below.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container1">
+        <div class="item1"><a href="https:://www.flipkart.com">
+        <img  src="fliplogo.jpg"> 
+        </a> </div>   
 
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
+        <div class="item2"><a href="#"> Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a></div>
+        </div>
+    </header>
+<section><h2>GALLERY</h2>
+    <article>
+<div class="gallery1">
+<img class="col1"  src="p1.jpg">
+<img class="col2"  src="p2.jpg">
+<img class="col3"  src="p3.jpg"></div>
 
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper.
--->
+<div class="gallery2">
+<img class="col4" src="p4.jpg">
+<img class="col5" src="p5.jpg">
+<img class="col6" src="p6.jpg">
+</div>
+    </article>
+</section>
+
+<footer> 
+    <div class="footer">
+ <img class="png1" src="p7.png">
+    <img class="png2" src="p8.png"></div>
+    </footer>
+
+</main>
+</body>
+</html>
+
+style.css
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;}
+
+header{padding: 20px  0;
+	background-color: rgb(6, 6, 85);
+
+}
+
+
+.container1{display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+}
+.item1,img {width: 50px;
+height: 50px;}
+
+.item2, a {text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 10px;
+color: white;
+margin: 10px 10px;
+
+}
+h2{ text-align: center;
+margin-top: 40px;
+font-size: 20px;
+color: brown;
+}
+
+
+.gallery1{display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+
+
+.col1, .col2, .col3{margin-top: 40px;
+	width: 200px;
+	height: 150px;
+
+	
+}
+.gallery2{display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.col4,.col5, .col6 {width: 200px;
+	height: 150px;
+	justify-content: space-evenly; 
+	margin-top: 40px; 
+     }
+
+
+footer{ margin-top: 40px;
+	padding: 20px 0;
+	background-color: rgb(6, 6, 85);
+}
+.footer{display: flex;
+	justify-content: center;
+
+}
+
+
+.png1,.png2{margin-right: 20px;   }
+
+
+
+
+
+
