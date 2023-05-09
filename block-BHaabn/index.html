@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container1">
-        <div class="item1"><a href="https:://www.flipkart.com">
-        <img  src="fliplogo.jpg"> 
-        </a> </div>   
-
-        <div class="item2"><a href="#"> Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact Us</a></div>
-        </div>
-    </header>
-<section><h2>GALLERY</h2>
-    <article>
-<div class="gallery1">
-<img class="col1"  src="p1.jpg">
-<img class="col2"  src="p2.jpg">
-<img class="col3"  src="p3.jpg"></div>
-
-<div class="gallery2">
-<img class="col4" src="p4.jpg">
-<img class="col5" src="p5.jpg">
-<img class="col6" src="p6.jpg">
+  <header>
+<div class="navbar">
+<div class="logo"><img src="google.png.png"></div>
+<div class="navlinks">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact Us</a>
 </div>
-    </article>
-</section>
+</div>
+  </header>
 
-<footer> 
-    <div class="footer">
- <img class="png1" src="p7.png">
-    <img class="png2" src="p8.png"></div>
-    </footer>
 
-</main>
+
+  </main>
+<article>
+<h2>Gallery</h2>
+<div class="big-box">
+<img class="gimg"  src="https://media.istockphoto.com/id/513247652/photo/panoramic-beautiful-view-of-mount-ama-dablam.jpg?s=612x612&w=0&k=20&c=5MWcvFfiJzmxMZ6olmyd14Q-OskUmbg33KS8LwFnb_0=">
+<img class="gimg" src="https://wallpaperset.com/w/full/b/0/5/20309.jpg">
+<img class="gimg" src="https://wallpaperset.com/w/full/c/7/a/20315.jpg">
+</div>
+
+<div class="big-box">
+  <img class="gimg"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUiALWuGHW1pNWpmW40ZA7a7w8f5EhyY7hBbQ8C9cpg&usqp=CAU&ec=48600113">
+  <img class="gimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo55BpPACWt1yZhGDCIat6hFuancdxn17TR0_suNXiBg&usqp=CAU&ec=48600113">
+  <img class="gimg" src="https://t3.ftcdn.net/jpg/01/84/29/36/360_F_184293662_ve3sE361ICzPfXL0xaJAQoe6fDBydDSO.jpg">
+  </div>
+</article>
+<footer>
+  <div class="footlink">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a></div>
+</footer>
 </body>
+
 </html>
 
 style.css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,6 +75,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -86,73 +96,54 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;}
+	border-collapse: collapse;
+	border-spacing: 0; }
 
-header{padding: 20px  0;
-	background-color: rgb(6, 6, 85);
+/*starts here*/
+header{background-color: rgb(212, 212, 212);
+padding: 10px 0px;
+}
+.logo,img{width: 100px;
+height: 50px;
+margin-left: 20px;
+}
+.navbar{display: flex;
+justify-content: space-between;
+}
+.navlink,a{height: 60px;
+	vertical-align: middle;
+text-decoration: none;
+text-transform: uppercase;
+margin: 0px 30px 0px 0px ;
+}
+.navlinks,a:hover {margin-top: 20px;
+color: rgb(18, 146, 18);
+}
+
+h2{text-align: center;
+font-size: 30px;
+margin-top: 50px;
 
 }
 
 
-.container1{display: flex;
-	justify-content: space-between;
-	width: 100%;
-
-}
-.item1,img {width: 50px;
-height: 50px;}
-
-.item2, a {text-decoration: none;
-	text-transform: uppercase;
-	margin-left: 10px;
-color: white;
-margin: 10px 10px;
-
-}
-h2{ text-align: center;
-margin-top: 40px;
-font-size: 20px;
-color: brown;
+.big-box{display: flex;
+justify-content: space-around;
+margin-top: 70px;
 }
 
-
-.gallery1{display: flex;
-	width: 100%;
-	justify-content: space-evenly;
+.gimg{width: 250px;
+height: 200px;
 }
 
-
-
-.col1, .col2, .col3{margin-top: 40px;
-	width: 200px;
-	height: 150px;
-
-	
-}
-.gallery2{display: flex;
-	width: 100%;
-	justify-content: space-evenly;
+footer{background-color: rgb(212, 212, 212);
+padding: 20px 0px;
+margin-top: 80px;
 }
 
-.col4,.col5, .col6 {width: 200px;
-	height: 150px;
-	justify-content: space-evenly; 
-	margin-top: 40px; 
-     }
-
-
-footer{ margin-top: 40px;
-	padding: 20px 0;
-	background-color: rgb(6, 6, 85);
+.footlink,a{text-align: center;
+color: rgb(122, 18, 241);
 }
-.footer{display: flex;
-	justify-content: center;
-
-}
-
-
-.png1,.png2{margin-right: 20px;   }
-
 
 
 
